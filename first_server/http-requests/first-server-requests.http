@@ -1,0 +1,7 @@
+### Get Dog List
+GET http://localhost:3000/
+Content-Type: application/json
+
+### Get Dog List
+GET http://localhost:3000/translations
+Content-Type: application/json
