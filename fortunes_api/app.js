@@ -7,6 +7,12 @@ const app = express();
 
 app.use(bodyParser.json());
 
+app.get('/', (req, res) => {
+  res.json({
+    message: 'The fortunes api server is running.'
+  })
+})
+
 app.get('/fortunes', (req, res) => {
   res.json(fortunes);
 });
