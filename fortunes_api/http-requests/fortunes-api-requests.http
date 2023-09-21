@@ -1,0 +1,19 @@
+### Get Root Enpoint
+GET http://localhost:3000/
+Content-Type: application/json
+
+### Get Fortune Endpoint
+GET http://localhost:3000/fortunes
+Content-Type: application/json
+
+### Create Fortune Endpoint
+POST http://localhost:3000/fortunes
+Content-Type: application/json
+
+### Get Fortune Random Endpoint
+GET http://localhost:3000/fortunes/random
+Content-Type: application/json
+
+### Get Fortune Id Endpoint
+GET http://localhost:3000/fortunes/2
+Content-Type: application/json
