@@ -6,10 +6,6 @@ Content-Type: application/json
 GET http://localhost:3000/fortunes
 Content-Type: application/json
 
-### Create Fortune Endpoint
-POST http://localhost:3000/fortunes
-Content-Type: application/json
-
 ### Get Fortune Random Endpoint
 GET http://localhost:3000/fortunes/random
 Content-Type: application/json
@@ -17,3 +13,13 @@ Content-Type: application/json
 ### Get Fortune Id Endpoint
 GET http://localhost:3000/fortunes/2
 Content-Type: application/json
+
+### Create Fortune Endpoint
+POST http://localhost:3000/fortunes
+Content-Type: application/json
+
+{
+  "message": "You will slip on a banana",
+  "lucky_number": 4,
+  "spirit_animal": "rat"
+}
