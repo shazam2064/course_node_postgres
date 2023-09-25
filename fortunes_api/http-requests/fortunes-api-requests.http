@@ -29,7 +29,11 @@ PUT http://localhost:3000/fortunes/8
 Content-Type: application/json
 
 {
-  "message": "You will slip on a banana - upd",
+  "message": "You will slip on a banana - upd ",
   "lucky_number": 14,
   "spirit_animal": "Rat"
 }
+
+### Delete Fortune Endpoint
+DELETE http://localhost:3000/fortunes/8
+Content-Type: application/json
