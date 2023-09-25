@@ -23,3 +23,13 @@ Content-Type: application/json
   "lucky_number": 4,
   "spirit_animal": "rat"
 }
+
+### Update Fortune Endpoint
+PUT http://localhost:3000/fortunes/8
+Content-Type: application/json
+
+{
+  "message": "You will slip on a banana - upd",
+  "lucky_number": 14,
+  "spirit_animal": "Rat"
+}
