@@ -1,0 +1,7 @@
+createdb -U postgres monstersdb
+psql -U postgres monstersdb
+
+CREATE USER node_user WITH SUPERUSER PASSWORD 'node_password';
+SELECT * FROM pg_user;
+
+psql -U node_user monstersdb;
