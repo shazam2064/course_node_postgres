@@ -10,13 +10,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/monsters', (request, response) => {
-    pool.query('SELECT * FROM monsters', (err, res) => {
+    pool.query('SELECT * FROM monsters ORDER BY id ASC', (err, res) => {
         if (err) return console.log(err);
 
-        console.log(res.rows);
+        response.json(res.rows);
     });
 });
 
-const port = 3000;
-
-app.listen(port, () => console.log(`listening on port ${port}`));
+module.exports = app;
