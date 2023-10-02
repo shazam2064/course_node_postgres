@@ -1,9 +1,10 @@
 const express = require('express');
-const pool = require('./db')
-const {request, response} = require("express");
+const bodyParser = require('body-parser');
 const monsters = require('./routes/monsters');
 
 const app = express();
+
+app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
     res.json({
