@@ -1,0 +1,33 @@
+### Get Root Endpoint
+GET http://localhost:3000/
+Content-Type: application/json
+
+### Get Monster List
+GET http://localhost:3000/monsters/
+Content-Type: application/json
+
+### Get Monster By Id
+GET http://localhost:3000/monsters/1
+Content-Type: application/json
+
+### Create Monster
+POST http://localhost:3000/monsters/
+Content-Type: application/json
+
+{
+  "name": "Sparky",
+  "personality": "playful"
+}
+
+### Update Monster
+PUT http://localhost:3000/monsters/4
+Content-Type: application/json
+
+{
+  "name": "Sparky-upd",
+  "personality": "playful-upd"
+}
+
+### Delete Monster By Id
+DELETE http://localhost:3000/monsters/4
+Content-Type: application/json
