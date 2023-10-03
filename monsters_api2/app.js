@@ -1,8 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const monsters = require('./routes/monsters');
-const habitats = require('./routes/habitats')
-const lives = require('./routes/lives')
+const routes = require('./routes');
 
 const app = express();
 
@@ -14,9 +12,7 @@ app.get('/', (req, res) => {
     })
 });
 
-app.use('/monsters', monsters);
-app.use('/habitats', habitats);
-app.use('/lives', lives);
+app.use('/', routes);
 
 app.use((err, req, res, next) => {
     res.json(err);
