@@ -5,3 +5,7 @@ Content-Type: application/json
 ### Get Lives List
 GET http://localhost:3000/lives/
 Content-Type: application/json
+
+### Get Lives List
+GET http://localhost:3000/lives/conditions
+Content-Type: application/json
