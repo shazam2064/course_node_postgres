@@ -1,0 +1,34 @@
+### Get Root Endpoint
+GET http://localhost:3000/
+Content-Type: application/json
+
+### Get Habitat List
+GET http://localhost:3000/habitats/
+Content-Type: application/json
+
+### Get Habitat By Id
+GET http://localhost:3000/habitats/1
+Content-Type: application/json
+
+### Create Habitat
+POST http://localhost:3000/habitats/
+Content-Type: application/json
+
+{
+  "name": "tide pools",
+  "climate": "humid",
+  "temperature": 60
+}
+
+### Update Habitat
+PUT http://localhost:3000/habitats/4
+Content-Type: application/json
+
+{
+  "name": "tide pools upd",
+  "climate": "humid-upd"
+}
+
+### Delete Habitat By Id
+DELETE http://localhost:3000/habitats/4
+Content-Type: application/json
