@@ -33,3 +33,5 @@ VALUES
 ('Fluffy', 'desert'),
 ('Noodles', 'forrest'),
 ('Rusty', 'mountain');
+
+SELECT * FROM monsters;
